@@ -1,0 +1,8 @@
+{
+  "name": "Marketing4Startups | Practical Marketing Strategy for Irish Startups & SMEs",
+  "description": "Tailored marketing strategy for Irish startups and small businesses. Win customers faster, reduce wasted ad spend, and tap into Irish enterprise grants without expensive agency fees.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-canvas: #0B0F17;
+  --color-surface: #101726;
+  --color-surface-elevated: #182338;
+  --color-hairline: rgba(255, 255, 255, 0.08);
+
+  --color-bronze: #C28B52;
+  --color-bronze-light: #E0A96D;
+  --color-bronze-dark: #9F6A35;
+  --color-bronze-subtle: rgba(194, 139, 82, 0.12);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-canvas);
+    color: #F8FAFC;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C28B52;
+}
+
+/* Hide scrollbar on touch devices while preserving swipe functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth mobile tap targets */
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
+
